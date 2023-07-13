@@ -1,0 +1,39 @@
+package com.isource.config.db;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.jdbc.DataSourceBuilder;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+@Configuration
+@Lazy
+public class DBConfig {
+
+	@Lazy(value = true)
+	@Bean(name = "WEB")
+	@ConfigurationProperties(prefix = "postgresql.datasource")
+	public DataSource dataSourceWEB() {
+		return DataSourceBuilder.create().build();
+	}
+
+	@Bean(name = "jdbcTemplateWEB")
+	public JdbcTemplate jdbcTemplateWEB(@Qualifier("WEB") DataSource ds) {
+		return new JdbcTemplate(ds);
+	}
+
+	@Bean(name = "CRM")
+	@ConfigurationProperties(prefix = "mssql.datasource")
+	public DataSource dataSourceCRM() {
+		return DataSourceBuilder.create().build();
+	}
+
+	@Bean(name = "jdbcTemplateCRM")
+	public JdbcTemplate jdbcTemplateCRM(@Qualifier("CRM") DataSource ds) {
+		return new JdbcTemplate(ds);
+	}
+}

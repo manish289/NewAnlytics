@@ -1,0 +1,12 @@
+success=User Register Successfully
+
+INVALID_USER_CREDENTIAL=This user id does not exist or the password is incorrect. Kindly try again.
+VALID_USER_CREDENTIAL=You are successfully logged in.
+
+RECORD_UPDATED=Record successfully updated.
+RECORD_NOT_UPDATED=Record successfully NOT updated.
+
+RECORD_INSERTED=Record successfully updated.
+RECORD_NOT_INSERTED=Record successfully NOT updated.
+
+DISCLAIMER=Tender247 tries to ensure accurate & authentic tender information at its level best however it cannot be held responsible for Omissions, Errors, etc. Users are advised to refer to Tender Document published by Procuring entity before they take submit the bid.

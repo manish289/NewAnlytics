@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="classpath:ehcache.xsd"
+	updateCheck="true" monitoring="autodetect" dynamicConfig="true">
+
+	<cache name="cache_state" maxElementsInMemory="100"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="43200"
+		timeToIdleSeconds="0" memoryStoreEvictionPolicy="LFU"
+		transactionalMode="off">
+	</cache>
+
+	<cache name="cache_city" maxElementsInMemory="100"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="43200"
+		timeToIdleSeconds="0" memoryStoreEvictionPolicy="LFU"
+		transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getOrganization" maxElementsInMemory="100"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="43200"
+		timeToIdleSeconds="0" memoryStoreEvictionPolicy="LFU"
+		transactionalMode="off">
+	</cache>
+
+	<cache name="cache_result_stage_getall" maxElementsInMemory="100"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="43200"
+		timeToIdleSeconds="0" memoryStoreEvictionPolicy="LFU"
+		transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getOrganizationType" maxElementsInMemory="100"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="43200"
+		timeToIdleSeconds="0" memoryStoreEvictionPolicy="LFU"
+		transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getregion" maxElementsInMemory="100"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="43200"
+		timeToIdleSeconds="0" memoryStoreEvictionPolicy="LFU"
+		transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getIndustry" maxElementsInMemory="100"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="43200"
+		timeToIdleSeconds="0" memoryStoreEvictionPolicy="LFU"
+		transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getKeyword" maxElementsInMemory="100"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="43200"
+		timeToIdleSeconds="0" memoryStoreEvictionPolicy="LFU"
+		transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getProduct" maxElementsInMemory="100"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="43200"
+		timeToIdleSeconds="0" memoryStoreEvictionPolicy="LFU"
+		transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getSubIndustry" maxElementsInMemory="100"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="43200"
+		timeToIdleSeconds="0" memoryStoreEvictionPolicy="LFU"
+		transactionalMode="off">
+	</cache>
+
+	<cache name="watchlist_getall" maxElementsInMemory="100"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="43200"
+		timeToIdleSeconds="0" memoryStoreEvictionPolicy="LFU"
+		transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getTenderingOwnership"
+		maxElementsInMemory="100" eternal="false" overflowToDisk="false"
+		timeToLiveSeconds="43200" timeToIdleSeconds="0"
+		memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getDashboardStatistics"
+		maxElementsInMemory="100" eternal="false" overflowToDisk="false"
+		timeToLiveSeconds="43200" timeToIdleSeconds="0"
+		memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getBidderTopCompetitors"
+		maxElementsInMemory="100" eternal="false" overflowToDisk="false"
+		timeToLiveSeconds="43200" timeToIdleSeconds="0"
+		memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getPublishTenderStateWise"
+		maxElementsInMemory="100" eternal="false" overflowToDisk="false"
+		timeToLiveSeconds="43200" timeToIdleSeconds="0"
+		memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getBidderTopCompetitorsMonthWise"
+		maxElementsInMemory="100" eternal="false" overflowToDisk="false"
+		timeToLiveSeconds="43200" timeToIdleSeconds="0"
+		memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getShortListCompetitorsChartMonthwise"
+		maxElementsInMemory="100" eternal="false" overflowToDisk="false"
+		timeToLiveSeconds="43200" timeToIdleSeconds="0"
+		memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getTopCompetitorListChart"
+		maxElementsInMemory="100" eternal="false" overflowToDisk="false"
+		timeToLiveSeconds="43200" timeToIdleSeconds="0"
+		memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getCompanyProfileStatewise"
+		maxElementsInMemory="100" eternal="false" overflowToDisk="false"
+		timeToLiveSeconds="43200" timeToIdleSeconds="0"
+		memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getCompanyProfileTenderingOwnership"
+		maxElementsInMemory="100" eternal="false" overflowToDisk="false"
+		timeToLiveSeconds="43200" timeToIdleSeconds="0"
+		memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getCompanyProfileDepartment"
+		maxElementsInMemory="100" eternal="false" overflowToDisk="false"
+		timeToLiveSeconds="43200" timeToIdleSeconds="0"
+		memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getCompanyProfileTenderStage"
+		maxElementsInMemory="100" eternal="false" overflowToDisk="false"
+		timeToLiveSeconds="43200" timeToIdleSeconds="0"
+		memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getMonthWiseChart" maxElementsInMemory="100"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="43200"
+		timeToIdleSeconds="0" memoryStoreEvictionPolicy="LFU"
+		transactionalMode="off">
+	</cache>
+
+	<cache name="cache_getCompanyProfileStatistics"
+		maxElementsInMemory="100" eternal="false" overflowToDisk="false"
+		timeToLiveSeconds="43200" timeToIdleSeconds="0"
+		memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+	</cache>
+
+	<cache name="cache_competitor_getTopCompetitorList"
+		maxElementsInMemory="100" eternal="false" overflowToDisk="false"
+		timeToLiveSeconds="43200" timeToIdleSeconds="0"
+		memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+	</cache>
+
+	<cache name="cache_competitor_getShortListCompetitors"
+		maxElementsInMemory="100" eternal="false" overflowToDisk="false"
+		timeToLiveSeconds="43200" timeToIdleSeconds="0"
+		memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+	</cache>
+
+	<cache name="cache_compare_CompanyNameForComparison"
+		maxElementsInMemory="100" eternal="false" overflowToDisk="false"
+		timeToLiveSeconds="43200" timeToIdleSeconds="0"
+		memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+	</cache>
+</ehcache>

@@ -1,0 +1,21 @@
+spring.main.allow-circular-references=true
+spring.main.allow-bean-definition-overriding=true
+
+#Live Security Token Genrate Key
+jwt.secret=Email@Tender247
+
+#postgresql.datasource.jdbc-url=jdbc:postgresql://192.168.7.3:5432/T247Analytics
+postgresql.datasource.jdbc-url=jdbc:postgresql://192.168.7.3:5432/CarTesting
+postgresql.datasource.username=postgres
+postgresql.datasource.password=tender247
+postgresql.datasource.driverClassName=org.postgresql.Driver
+
+
+spring.cache.type=ehcache
+spring.cache.ehcache.config=classpath:ehcache.xml
+
+springdoc.swagger-ui.tagsSorter=alpha
+springdoc.swagger-ui.operations-sorter=alpha
+
+spring.output.ansi.enabled=always
+

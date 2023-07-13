@@ -1,0 +1,33 @@
+package com.isource.service;
+
+import java.util.List;
+
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Service;
+
+import com.isource.dto.dashboard.AllCompetitorsDto;
+import com.isource.dto.dashboard.BidderTopCompetitorsDto;
+import com.isource.dto.dashboard.BidderTopCompetitorsListChartDto;
+import com.isource.dto.dashboard.DashboardStatisticsDto;
+import com.isource.dto.dashboard.PublishTenderStateWiseDto;
+import com.isource.dto.dashboard.TenderingOwnershipDto;
+import com.isource.model.competitors.BidderTopCompetitorsModel;
+import com.isource.model.competitors.BidderTopCompitorsMonthWiseModel;
+import com.isource.model.dashboard.AllCompetitorsModel;
+import com.isource.model.dashboard.DashboardStatisticsModel;
+import com.isource.model.dashboard.PublishTenderStateWiseModel;
+import com.isource.model.dashboard.TenderingOwnershipModel;
+import com.isource.utility.ApiResponse;
+
+@Service
+@Lazy
+public interface DashboardService {
+
+	ApiResponse<List<DashboardStatisticsDto>> getDashboardStatistics(DashboardStatisticsModel dashboardStatistics);
+	ApiResponse<List<BidderTopCompetitorsDto>> getBidderTopCompetitorsList(BidderTopCompetitorsModel bidderTopCompetitorsModel);
+	ApiResponse<List<PublishTenderStateWiseDto>> getPublishTenderStateWise(PublishTenderStateWiseModel publishTenderStateWiseModel);
+	ApiResponse<List<TenderingOwnershipDto>> getTenderingOwnership(TenderingOwnershipModel tenderingOwnershipModel);
+	ApiResponse<List<BidderTopCompetitorsListChartDto >> getBidderTopCompetitorsListMonthWise(BidderTopCompitorsMonthWiseModel bidderTopCompitorsMonthWise);
+	ApiResponse<List<AllCompetitorsDto>> getAllTopCompetitorsList(AllCompetitorsModel listOfTopCompetitorsListModel);
+
+}

@@ -1,0 +1,17 @@
+package com.isource.utility;
+
+import org.json.simple.JSONValue;
+
+import com.google.gson.Gson;
+
+public class GenericConverter {
+
+	public static String convertData(Object resultSetString){
+		return  JSONValue.toJSONString(resultSetString);
+	}
+
+	public static String gsonToJson(Object resultSetString) {
+		Gson gson = new Gson();
+		return gson.toJson(resultSetString);
+	}	
+}
